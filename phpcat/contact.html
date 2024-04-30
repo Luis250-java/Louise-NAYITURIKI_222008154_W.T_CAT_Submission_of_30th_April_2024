@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My dashboard</title>
+    <style>
+        /* Basic styling for the navigation bar */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+        }
+        .navbar {
+            background-color: darkgreen;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <img src="http://localhost/phpcat/images/My logo.png" alt="My Logo" style="height: 50px;width: 70px;">
+    <a href="home.html">Home</a>
+    <a href="logo.html">Logo</a>
+    <a href="Alltables.php">Tables</a>
+    <a href="image.html">Images</a>
+    <a href="video.html">videos</a>
+    <a href="form.html">Forms</a>
+    <a href="audio.html">audios</a>
+    <a href="service.html">Service</a>
+    <a href="contact.html">contacts</a>
+    <a href="about.html">About</a>
+    <div class="user-links">
+    <a href="userlogin.html">Login</a>
+    <a href="signup.html">Sign Up</a>
+</div>
+</div>
+<script>
+    // JavaScript for navigation bar dropdown menu
+    function toggleMenu() {
+        var navbar = document.getElementById("navbar");
+        if (navbar.className === "navbar") {
+            navbar.className += " responsive";
+        } else {
+            navbar.className = "navbar";
+        }
+    }
+</script>
+<center>
+    <form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+  </ul>
+
+</header>
+<section>
+	<h2><bold><u>CONTACT US</u></bold></h2>
+<ul></ul>
+  <li>Address: 125 Main Street, Kacyiru, Rwanda</li>
+  <li>Phone: +250 788826227</li>
+  <li>Email: info@sams.com</li>
+</ul>
+
+<form action="login.php" method="post" style="background-color: white; width: 500px; height: 200px;">
+  <label for="name">Names:</label><br>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="phone">Telephone:</label><br>
+  <input type="tel" id="phone" name="phone"><br>
+
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="4" required></textarea>
+
+  <input type="submit" value="send">
+</form>
+<p>Connect with us on social media or social networkings:
+
+  <a href="https://www.twitter.com/sams">Twitter</a>
+  <a href="https://www.facebook.com/sams">Facebook</a>
+  <a href="https://www.instagram.com/sams">Instagram</a>
+  <a href="https://www.whatsapp.com/sams">Whatsapp</a>
+</p>
+</section>
+<center>
+    <button style="background-color: darkgreen; width: 150px;height: 40px;" ><a href="home.html" style=" font-size: 15px;color: white;text-decoration: none" >Back Home</a></button>
+</center>
+<footer>
+  <center> 
+   <marquee><h1 style="color: black;">UR CBE BIT &copy, 2024 &sams, Designed by: @Louise NAYITURIKI</h1></marquee>
+  </center>
+</footer>
+
+</body>
+</html>
+

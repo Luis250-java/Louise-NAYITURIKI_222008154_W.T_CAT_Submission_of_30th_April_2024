@@ -1,0 +1,104 @@
+
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration form</title>
+    <style>
+        /* Basic styling for the navigation bar */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: darkgreen;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="logo.html">Logo</a>
+    <a href="Alltables.php">Tables</a>
+    <a href="image.html">Images</a>
+    <a href="video.html">videos</a>
+    <a href="form.html">Forms</a>
+    <a href="audio.html">audios</a>
+    <a href="service.html">Service</a>
+    <a href="contact.html">contacts</a>
+    <a href="about.html">About</a>
+        <div class="user-links">
+        <a href="userlogin.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+</div>
+<script>
+    // JavaScript for navigation bar dropdown menu
+    function toggleMenu() {
+        var navbar = document.getElementById("navbar");
+        if (navbar.className === "navbar") {
+            navbar.className += " responsive";
+        } else {
+            navbar.className = "navbar";
+        }
+    }
+</script>
+  </ul>
+<center>
+    <div style="margin-left: 500px;"><form action="search.php" method="GET">
+      <input type="search" name="query" placeholder="search here!!!!!!!">&nbsp;&nbsp;&nbsp;<button type="submit" style="background-color: blue;width: 100px;">search</button>
+    </form></div>
+</form>
+<body>
+    <!--this form is designed to register class records in database-->
+
+    <body bgcolor="grey" style="color:black;font:normal;font-Size:15;
+    margin-top:20;margin-bottom:20;margin-left:20;margin-right:20;">
+    <center>
+    <h2>students Registration form</h2>
+    <form action="studentregist.php" method="post">
+        <label>Student ID:</label><br>
+        <input type="number" name="student_id" required><br>
+        <label>first name:</label><br>
+        <input type="text" name="first_name" required><br>
+        <label>Last name:</label><br>
+        <input type="text" name="last_name" required><br>
+        <label>Reg number:</label><br>
+        <input type="number" name="reg_number" required><br>
+        <label>Date of birth:</label><br>
+        <input type="date" name="date_of_birth" required><br>
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br>
+        <label>address:</label><br>
+        <input type="text" name="address" required><br>
+        <label>class section:</label><br>
+        <input type="radio" id="A" name="class_section" value="A">
+        <label for="class_section">A</label><br>
+        <input type="radio" id="B" name="class_section" value="B">
+        <label for="class_section">B</label><br>
+        <input type="radio" id="C" name="class_section" value="C">
+        <label for="class_section">C</label><br>
+        </label><br>
+        <input type="submit" value="Register">
+    </form>
+    <center>
+    <button style="background-color: darkgreen; width: 150px;height: 40px;" ><a href="home.html" style=" font-size: 15px;color: white;text-decoration: none" >Back Home</a></button>
+</center>
+</center>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Management System</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+           background-color: whitesmoke;
+        }
+
+        .navbar {
+            background-color: darkgreen;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+    </style>
+    </head>
+<body>
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="logo.html">Logo</a>
+    <a href="Alltables.php">Tables</a>
+    <a href="image.html">Images</a>
+    <a href="video.html">videos</a>
+    <a href="form.html">Forms</a>
+    <a href="audio.html">audios</a>
+    <a href="service.html">Service</a>
+    <a href="about.html">About</a>
+        <div class="user-links">
+        <a href="userlogin.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+</div>
+<script>
+    // JavaScript for navigation bar dropdown menu
+    function toggleMenu() {
+        var navbar = document.getElementById("navbar");
+        if (navbar.className === "navbar") {
+            navbar.className += " responsive";
+        } else {
+            navbar.className = "navbar";
+        }
+    }
+</script>
+</head>
+<body>
+     <body bgcolor="lightblue" style="color:black;font:normal;font-Size:15;
+    margin-top:20;margin-bottom:20;margin-left:20;margin-right:20;">
+    <center>
+    <h2>Student Attendance Management System</h2>
+
+    <!-- Form to mark attendance -->
+    <form action="markattendance.php" method="POST">
+        <label for="student_name">Student Name:</label>
+        <input type="text" id="student_name" name="student_name" required>
+        <button type="submit">Mark Attendance</button>
+    </form>
+
+    <br>
+
+    <!-- Attendance Records Table -->
+    <h3>Attendance Records</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>attendance_id</th>
+                <th>student_id</th>
+                <th>Student_name</th>
+                <th>course_id</th>
+                <th>attendance_date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+</center>
+
+</body>
+</html>

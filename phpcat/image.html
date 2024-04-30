@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All images</title>
+    <style>
+        .navbar {
+            background-color: darkgreen;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            color: black;
+        }
+
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .dots {
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="logo.html">Logo</a>
+        <a href="Alltables.php">Tables</a>
+        <a href="image.html">Images</a>
+        <a href="video.html">videos</a>
+        <a href="form.html">Forms</a>
+        <a href="audio.html">audios</a>
+        <a href="service.html">Service</a>
+        <a href="contact.html">contacts</a>
+        <a href="about.html">About</a>
+        <div class="user-links">
+            <a href="userlogin.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-8">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="http://localhost/phpcat/images/Att.webp" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="http://localhost/phpcat/images/att 4.webp" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="http://localhost/phpcat/images/att 8.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="http://localhost/phpcat/images/att 9.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="http://localhost/phpcat/images/att 7.jpg" style="width:100%">
+                    </div>images\
+                    <div class="mySlides fade">
+                        <img src="http://localhost/phpcat/images/att 10.jpg" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+            <div class="col col-gy-4 col-g-2">
+                <!-- Additional Images -->
+                <!-- Image 1 -->
+                <div class="grid gap-0 row-gap-6">
+                    <img src="http://localhost/phpcat/images/att 5.jpg" alt="Additional Image 1" class="img-fluid">
+                    <p><a href="#">Description for Image 1</a></p>
+                </div>
+                <!-- Image 2 -->
+                <div class="grid gap-0 row-gap-6">
+                    <img src="http://localhost/phpcat/images/att 6.jpg" alt="Additional Image 2" class="img-fluid">
+                    <p><a href="#">Description for Image 2</a></p>
+                </div>
+                <!-- Image 3 -->
+                <div class="grid gap-0 row-gap-6">
+                    <img src="http://localhost/phpcat/images/attend 2.jpg" alt="Additional Image 3" class="img-fluid">
+                    <p><a href="#">Description for Image 3</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+ //html codes for uploading new image       
+    </script>
+<title>Image Upload</title>
+</head>
+<!--NAYITURIKI LOUISE-->
+<body>
+
+<h2>Upload Image</h2>
+
+<form action="images.php" method="post" enctype="multipart/form-data">
+  <label for="imageFile">Select image file:</label><br>
+  <input type="file" id="imageFile" name="imagefile"><br><br>
+  <input type="submit" value="Upload">
+        </div>
+        <center>
+    <button style="background-color: darkgreen; width: 150px;height: 40px;" ><a href="home.html" style=" font-size: 15px;color: white;text-decoration: none" >Back Home</a></button>
+</center>
+    </div>
+    <marquee><h1 style="color: brown;">Experience more!!!</h1></marquee>
+</body>
+
+</html>

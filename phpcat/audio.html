@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--NAYITURIKI LOUISE-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Audio</title>
+    <style>
+        /* Basic styling for the navigation bar */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+        }
+        .navbar {
+            background-color: darkgreen;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body> 
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="logo.html">Logo</a>
+    <a href="Alltables.php">Tables</a>
+    <a href="image.html">Images</a>
+    <a href="video.html">videos</a>
+    <a href="form.html">Forms</a>
+    <a href="audio.html">audios</a>
+    <a href="service.html">Service</a>
+    <a href="contact.html">contacts</a>
+    <a href="about.html">About</a>
+        <div class="user-links">
+        <a href="userlogin.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+</div>
+<center>
+    <form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+<script>
+    // JavaScript for navigation bar dropdown menu
+    function toggleMenu() {
+        var navbar = document.getElementById("navbar");
+        if (navbar.className === "navbar") {
+            navbar.className += " responsive";
+        } else {
+            navbar.className = "navbar";
+        }
+    }
+</script>
+<section style="color: black;margin-top: 200px;">
+<h1>These audios will help you</h1>
+    <div class="container">
+        <!--<h1>Contents about the video</h1>-->
+        <div class="row gx-5">
+            <div class="col-8">
+                <audio controls>
+                    <source src="http://localhost/phpcat/Audio/Audio 2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag
+                    <caption>This is our first additional audio</caption>
+                </audio>
+            </div>
+            <div class="col col-gy-4 col-g-2"> <!--col-sm-4 offset-sm-2">-->
+                <div class="grid gap-0 row-gap-6">
+                    <audio controls>
+                        <source src="http://localhost/phpcat/Audio/Audio 2.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag
+                        <caption>This is our first additional audio</caption>
+                    </audio>
+<title>Audio Upload</title>
+</head>
+<!--NAYITURIKI LOUISE-->
+<body>
+
+<h2>Upload Audio</h2>
+
+<form action="audio.php" method="post" enctype="multipart/form-data">
+  <label for="audioFile">Select audio file:</label><br>
+  <input type="file" id="audioFile" name="audiofile"><br><br>
+  <input type="submit" value="Upload">
+        </div>
+        <center>
+    <button style="background-color: darkgreen; width: 150px;height: 40px;" ><a href="home.html" style=" font-size: 15px;color: white;text-decoration: none" >Back Home</a></button>
+</center>
+    </div>
+    <marquee><h1 style="color: brown;">Experience more!!!</h1></marquee>
+</body>
+
+</html>

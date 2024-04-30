@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course form</title>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course registration form</title>
+    <style>
+        /* Basic styling for the navigation bar */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: darkgreen;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <img src="file:///C:\xampp\htdocs\phpcat\images\My logo.png" alt="My Logo" style="height:50px;margin-right:70px;">
+  </ul>
+    <a href="home.html">Home</a>
+    <a href="logo.html">Logo</a>
+    <a href="Alltables.php">Tables</a>
+    <a href="image.html">Images</a>
+    <a href="video.html">videos</a>
+    <a href="form.html">Forms</a>
+    <a href="audio.html">audios</a>
+    <a href="service.html">Service</a>
+    <a href="contact.html">contacts</a>
+    <a href="mybook.html">My Book</a>
+    <a href="about.html">About</a>
+        <div class="user-links">
+        <a href="userlogin.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+</div>
+<script>
+    // JavaScript for navigation bar dropdown menu
+    function toggleMenu() {
+        var navbar = document.getElementById("navbar");
+        if (navbar.className === "navbar") {
+            navbar.className += " responsive";
+        } else {
+            navbar.className = "navbar";
+        }
+    }
+</script>
+  </ul>
+<center>
+    <form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+<body>
+    <!--this form is designed to register new course records in database-->
+
+    <body bgcolor="grey" style="color:black;font:normal;font-Size:15;
+    margin-top:20;margin-bottom:20;margin-left:20;margin-right:20;">
+    <center>
+    <h2>course Registration form</h2>
+    <form action="courseform.php" method="post">
+        <label>Course ID:</label><br>
+        <input type="number" name="course_id" required><br>
+        <label>course name:</label><br>
+        <input type="text" name="course_name" required><br>
+        <label>course code:</label><br>
+        <input type="number" name="course_code" required><br>
+        <label>Course description:</label><br>
+        <input type="text" name="course_description" required><br>
+        <label>Teacher id:</label><br>
+        <input type="number" name="teacher_id" required><br>
+        <input type="submit" value="Register">
+    </form>
+</center>
+<center>
+    <button style="background-color: darkgreen; width: 150px;height: 40px;" ><a href="home.html" style=" font-size: 15px;color: white;text-decoration: none" >Back Home</a></button>
+</center>
+</body>
+</html>

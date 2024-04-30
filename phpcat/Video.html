@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--NAYITURIKI LOUISE-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My videos</title>
+    <style>
+        /* Basic styling for the navigation bar */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+        }
+        .navbar {
+            background-color: darkgreen;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body> 
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="logo.html">Logo</a>
+    <a href="Alltables.php">Tables</a>
+    <a href="image.html">Images</a>
+    <a href="video.html">Videos</a>
+    <a href="form.html">Forms</a>
+    <a href="audio.html">Audios</a>
+    <a href="service.html">Service</a>
+    <a href="contact.html">Contacts</a>
+    <a href="about.html">About</a>
+        <div class="user-links">
+        <a href="userlogin.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+</div>
+<center>
+    <form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+    
+  
+        <div class="video-container">
+            <div class="main-video">
+                <video id="mainVideo" class="video" src="http://localhost/phpcat/Videos/my video 1.mp4" controls></video>
+            </div>
+            <div class="video-list">
+                <video class="video" src="http://localhost/phpcat/Videos/Videoo.mp4" onclick="changeMainVideo('video/My video 1.mp4')" controls></video>
+                <video class="video" src="video/video4.mp4" onclick="changeMainVideo('video/video4.mp4')" controls></video>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col">
+                <h2>Upload New Video</h2>
+                <form action="video.php" method="POST" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="videoFile" class="form-label">Choose Video File:</label>
+                        <input type="file" class="form-control" id="videoFile" name="videofile" accept="video/mp4">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Upload Video</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeMainVideo(videoSrc) {
+            const mainVideo = document.getElementById('mainVideo');
+            mainVideo.src = videoSrc;
+            mainVideo.play();
+        }
+
+        document.getElementById('commentBtn').addEventListener('click', function() {
+            alert('Comment functionality triggered');
+        });
+
+        document.getElementById('shareBtn').addEventListener('click', function() {
+            alert('Share functionality triggered');
+        });
+    </script>
+    <marquee><h1 style="color: darkgoldenrod;">Thank you for watching!!!</h1></marquee>
+    <center>
+    <button style="background-color: darkgreen; width: 150px;height: 40px;" ><a href="home.html" style=" font-size: 15px;color: white;text-decoration: none" >Back Home</a></button>
+</center>
+</body>
+</html>

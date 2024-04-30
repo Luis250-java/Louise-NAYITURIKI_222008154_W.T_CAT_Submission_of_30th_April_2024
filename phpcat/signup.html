@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User login</title>
+    <style>
+        /* Basic styling for the navigation bar */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lightskyblue;
+        }
+        .navbar {
+           background-color: darkgreen;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body> 
+<script>
+    // JavaScript for navigation bar dropdown menu
+    function toggleMenu() {
+        var navbar = document.getElementById("navbar");
+        if (navbar.className === "navbar") {
+            navbar.className += " responsive";
+        } else {
+            navbar.className = "navbar";
+        }
+    }
+</script>
+<center>
+    <div style="margin-left: 500px;"><form action="search.php" method="GET">
+      <input type="search" name="query" placeholder="search here!!!!!!!">&nbsp;&nbsp;&nbsp;<button type="submit" style="background-color: blue;width: 100px;">search</button>
+    </form></div>
+</form>
+
+</header>
+</head>
+<body>
+    <body bgcolor="lightblue" style="color:black;font:normal;font-Size:15;
+    margin-top:20;margin-bottom:20;margin-left:20;margin-right:20;">
+    <center>
+    <h2>Sign Up</h2>
+    <form action="signup.php" method="POST">
+        <label>User ID:</label><br>
+        <input type="number" name="user_id" required><br>
+        <label>username:</label><br>
+        <input type="username" name="username" required><br>
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br>
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br>
+        <label>Sign up Date:</label><br>
+        <input type="date" name="registration_date" required><br>
+        <label>Role:</label><br>
+        <input type="radio" id="admin" name="role" value="admin">
+        <label for="admin">Admin</label><br>
+        <input type="radio" id="teacher" name="role" value="teacher">
+        <label for="teacher">Teacher</label><br>
+        <input type="radio" id="student" name="role" value="student">
+        <label for="student">Student</label><br>
+        </label><br>
+
+        <input type="submit" value="Sign Up">
+    </form>
+</center>
+<center>
+    <button style="background-color: darkgreen; width: 150px;height: 40px;" ><a href="home.html" style=" font-size: 15px;color: white;text-decoration: none" >Back Home</a></button>
+</center>
+</body>
+</html>

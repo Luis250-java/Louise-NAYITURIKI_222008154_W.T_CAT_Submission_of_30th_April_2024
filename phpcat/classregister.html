@@ -1,0 +1,84 @@
+
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class form</title>
+    <style>
+        /* Basic styling for the navigation bar */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="logo.html">Logo</a>
+    <a href="Alltables.php">Tables</a>
+    <a href="image.html">Images</a>
+    <a href="video.html">videos</a>
+    <a href="form.html">Forms</a>
+    <a href="audio.html">audios</a>
+    <a href="service.html">Service</a>
+    <a href="contact.html">contacts</a>
+    <a href="about.html">About</a>
+        <div class="user-links">
+        <a href="userlogin.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+</div>
+  </ul>
+<center>
+    <form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+<body>
+    <!--this form is designed to register class records in database-->
+
+    <body bgcolor="grey" style="color:black;font:normal;font-Size:15;
+    margin-top:20;margin-bottom:20;margin-left:20;margin-right:20;">
+    <center>
+    <h2>class Registration form</h2>
+    <form action="classregist.php" method="post">
+        <label>Class ID:</label><br>
+        <input type="number" name="class_id" required><br>
+        <label>class name:</label><br>
+        <input type="text" name="class_name" required><br>
+        <label>course id:</label><br>
+        <input type="number" name="course_id" required><br>
+        <label>Teacher id:</label><br>
+        <input type="number" name="teacher_id" required><br>
+        <label>class section:</label><br>
+        <input type="radio" id="A" name="class_section" value="A">
+        <label for="class_section">A</label><br>
+        <input type="radio" id="B" name="class_section" value="B">
+        <label for="class_section">B</label><br>
+        <input type="radio" id="C" name="class_section" value="C">
+        <label for="class_section">C</label><br>
+        </label><br>
+        <input type="submit" value="Register">
+    </form>
+</center>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--NAYITURIKI LOUISE-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Attendance Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; /* Added to remove default margin */
+            background-color: lightblue; /* Set a background color */
+        }
+        .navbar {
+            background-color: darkgreen;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto; /* Changed margin to add space from top */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<!--Codes for navbar-->
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="logo.html">Logo</a>
+    <a href="Alltables.php">Tables</a>
+    <a href="image.html">Images</a>
+    <a href="video.html">videos</a>
+    <a href="form.html">Forms</a>
+    <a href="audio.html">audios</a>
+    <a href="service.html">Service</a>
+    <a href="contact.html">contacts</a>
+    <a href="about.html">About</a>
+        <div class="user-links">
+        <a href="userlogin.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+</div>
+<script>
+    // JavaScript for navigation bar dropdown menu
+    function toggleMenu() {
+        var navbar = document.getElementById("navbar");
+        if (navbar.className === "navbar") {
+            navbar.className += " responsive";
+        } else {
+            navbar.className = "navbar";
+        }
+    }
+</script>
+<div style="margin-left: 500px;"><form action="search.php" method="GET">
+      <input type="search" name="query" placeholder="search here!!!!!!!">&nbsp;&nbsp;&nbsp;<button type="submit" style="background-color: blue;width: 100px;">search</button>
+    </form></div>
+<div class="container">
+    <h2>Services Provided by Students Attendance Management System</h2>
+    <p>The Students Attendance Management System offers the following services:</p>
+    <ul>
+        <li><strong>Automated Attendance Tracking:</strong> Automatically record student attendance.</li>
+        <li><strong>Real-Time Monitoring:</strong> Monitor attendance in real-time.</li>
+        <li><strong>Accuracy and Accountability:</strong> Ensure accurate and accountable attendance records.</li>
+        <li><strong>Efficiency in Reporting:</strong> Generate attendance reports efficiently.</li>
+        <li><strong>Integration with Other Systems:</strong> Integrate seamlessly with other educational systems.</li>
+        <li><strong>User-Friendly Interface:</strong> Easy-to-use interface for administrators, teachers, and students.</li>
+        <li><strong>Accessibility:</strong> Access attendance data from anywhere, anytime.</li>
+        <p> For more information to know about our services, connect with us on social media and pur websites:</p>
+<!--links for our social medias-->
+  <a href="https://www.twitter.com/sams">Twitter</a>
+  <a href="https://www.facebook.com/sams">Facebook</a>
+  <a href="https://www.instagram.com/sams">Instagram</a>
+  <a href="https://www.whatsapp.com/sams">whatsapp</a>
+</p>
+    </ul>
+</div>
+<center>
+    <button style="background-color: darkgreen; width: 150px;height: 40px;" ><a href="home.html" style=" font-size: 15px;color: white;text-decoration: none" >Back Home</a></button>
+</center>
+<footer>
+  <center> 
+   <marquee><h1 style="color: brown;">UR CBE BIT &copy, 2024 &sams, Designed by: @Louise NAYITURIKI</h1></marquee>
+  </center>
+</footer>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--NAYITURIKI LOUISE-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User login</title>
+    <style>
+        /* Basic styling for the navigation bar */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+        }
+        .navbar {
+            background-color: darkgreen;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+    </head>
+<body> 
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="logo.html">Logo</a>
+    <a href="tables.html">Tables</a>
+    <a href="image.html">Images</a>
+    <a href="video.html">videos</a>
+    <a href="form.html">Forms</a>
+    <a href="audio.html">audios</a>
+    <a href="service.html">Service</a>
+    <a href="contact.html">contacts</a>
+    <a href="about.html">About</a>
+        <div class="user-links">
+        <a href="userlogin.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+</div>
+<center>
+    <form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+    
+  
+        <div class="video-container">
+            <div class="main-video">
+                <video id="mainVideo" class="video" src="C:\xampp\htdocs\phpcat\Videos\Video 1.mp4" controls></video>
+                <div class="video-controls">
+                    <button id="commentBtn">Comment</button>
+                    <button id="shareBtn">Share</button>
+                </div>
+            </div>
+            <div class="video-list">
+                <video class="video" src="C:\xampp\htdocs\phpcat\Videos\Video 2.mp4" onclick="changeMainVideo('video/video2.mp4')" controls></video>
+                <video class="video" src="video/video3.mp4" onclick="changeMainVideo('video/video3.mp4')" controls></video>
+                <video class="video" src="video/video4.mp4" onclick="changeMainVideo('video/video4.mp4')" controls></video>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col">
+                <h2>Upload New Video</h2>
+                <form action="video.php" method="POST" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="videoFile" class="form-label">Choose Video File:</label>
+                        <input type="file" class="form-control" id="videoFile" name="videoFile" accept="video/mp4">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Upload Video</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeMainVideo(videoSrc) {
+            const mainVideo = document.getElementById('mainVideo');
+            mainVideo.src = videoSrc;
+            mainVideo.play();
+        }
+
+        document.getElementById('commentBtn').addEventListener('click', function() {
+            alert('Comment functionality triggered');
+        });
+
+        document.getElementById('shareBtn').addEventListener('click', function() {
+            alert('Share functionality triggered');
+        });
+    </script>
+</body>
+</html>

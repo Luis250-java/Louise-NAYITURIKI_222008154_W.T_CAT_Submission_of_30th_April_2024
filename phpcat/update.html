@@ -1,0 +1,33 @@
+
+
+<html>
+<body>
+    <form method="POST">
+        <label for="firstname">firstname:</label>
+        <input type="text" name="firstname" value="<?php echo isset($a) ? $a : ''; ?>">
+        <br><br>
+        <label for="lastname">lastname:</label>
+        <input type="text" name="lastname" value="<?php echo isset($x) ? $x : ''; ?>">
+        <br><br>
+        <label for="username">username:</label>
+        <input type="text" name="username" value="<?php echo isset($z) ? $z : ''; ?>">
+        <br><br>
+        <label for="email">email:</label>
+        <input type="text" name="email" value="<?php echo isset($b) ? $b : ''; ?>">
+        <br><br>
+        <label for="password">password:</label>
+        <input type="text" name="password" value="<?php echo isset($c) ? $c : ''; ?>">
+        <label for="telephone">telephone:</label>
+        <input type="text" name="telephone" value="<?php echo isset($d) ? $d : ''; ?>">
+        <br><br>
+        <br><br>
+        <label for="role">hireddate:</label>
+        <input type="date" name="hireddate" value="<?php echo isset($y) ? $y : ''; ?>">
+        <br><br>
+       
+        <input type="submit" name="up" value="Update">
+        <input type="reset" name="cn" value="cancel">
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User login</title>
+    <style>
+        /* Basic styling for the navigation bar */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lightskyblue;
+        }
+        .navbar {
+           background-color: darkgreen;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body> 
+<script>
+    // JavaScript for navigation bar dropdown menu
+    function toggleMenu() {
+        var navbar = document.getElementById("navbar");
+        if (navbar.className === "navbar") {
+            navbar.className += " responsive";
+        } else {
+            navbar.className = "navbar";
+        }
+    }
+</script>
+<center>
+    <div style="margin-left: 500px;"><form action="search.php" method="GET">
+      <input type="search" name="query" placeholder="search here!!!!!!!">&nbsp;&nbsp;&nbsp;<button type="submit" style="background-color: blue;width: 100px;">search</button>
+    </form></div>
+</form>
+
+</header>
+</head>
+
+<body>
+<center>
+    <h2 style="background-color:grey; width: 500px; height: 50px;">
+    Login Form</h2>
+    <form action="userlogin.php" method="post" style="background-color: grey; width: 500px; height: 200px;">
+        <label>username:</label>
+        <input type="text" name="username" required><br><br>
+        <label>Password:</label>
+        <input type="password" name="password" required>
+     
+     <p style="font-size: 20px;"><a href="resetpassword.html">Forgot Password</a></p>
+
+        <input type="submit" value="Login">
+        <input type="reset" value="Cancel">
+         
+    <p style="font-size: 20px;"><i>Don't have an account?</i> <a href="userregister.html">
+        Create New Account</a></p>
+        <center>
+    <button style="background-color: darkgreen; width: 150px;height: 40px;" ><a href="home.html" style=" font-size: 15px;color: white;text-decoration: none" >Back Home</a></button>
+</center>
+    <footer>
+   <marquee><h1 style="color: brown;">UR CBE BIT &copy, 2024 &sams, Designed by: @Louise NAYITURIKI</h1></marquee>
+</footer>
+    </form>
+</center>
+</body>
+</html>
